@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><b>Registrar un usuario</b></h1>
+    <br>
+    <form action="https://localhost:8080/api/registro" method="POST">
+        <label for="Nombre del usuario">
+            <h3>Nombre del usuario</h3>
+        </label>
+        <input type="text" name="Nombre del usuario" id="Nombre-del-usuario" placeholder="Nombre del usuario">
+        <label for="Contraseña del usuario">
+            <h3>Contraseña del usuario</h3>
+        </label>
+        <input type="password" name="Contraseña del usuario" id="Contraseña-del-usuario"
+            placeholder="Contraseña del usuario">
+        <label for="Edad del usuario">
+            <h3>Edad del usuario</h3>
+        </label>
+        <input type="number" name="Edad del usuario" id="Edad-del-usuario" placeholder="Edad del usuario">
+        <label for="Fecha de nacimiento del usuario">
+            <h3>Fecha de nacimiento del usuario</h3>
+        </label>
+        <input type="date" name="Fecha de nacimiento del usuario" id="Fecha-de-nacimiento-del-usuario">
+        <h3>Sexo del usuario</h3>
+        <input type="radio" name="Sexo" id="hombre" value="hombre">
+        <label for="hombre">Hombre</label>
+        <br>
+        <input type="radio" name="Sexo" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <input type="radio" name="Sexo" id="prefriero-no-decir" value="prefriero no decir">
+        <label for="prefiero-no-decir">Prefiero no decir</label>
+
+        <h3>País de nacimiento del usuario</h3>
+        <select name="selector" id="">
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Guyana">Guyana</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Perú">Perú</option>
+            <option value="Surinam">Surinam</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Venezuela">Venezuela</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+</html>
